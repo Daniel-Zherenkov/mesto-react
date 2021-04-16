@@ -1,0 +1,14 @@
+.element__like {
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    opacity: 1;
+    height: 100%;
+    align-self: center;
+    
+}
+
+.element__like:hover {
+    opacity: .6;
+    }
+
