@@ -67,6 +67,7 @@
 @import url(./blocks/popup/__container/popup__container.css);
 @import url(./blocks/popup/__save-button/popup__save-button.css);
 @import url(./blocks/popup/__title/popup__title.css);
+@import url(./blocks/popup/__input-filed/popup__input-filed.css);
 @import url(./blocks/popup/popup_opened.css);
 
 

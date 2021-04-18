@@ -12,7 +12,7 @@ function Card ({ card, onCardClick }) {
 
     return(
                 <div className="element">
-                    <img onClick={handleClick} src={link} alt="Картинка" className="element__image" />
+                    <img onClick={handleClick} src={link} alt={name} className="element__image" />
                     <button type="button" className="element__trash"></button>
                     <div className="element__footer">
                         <h2 className="element__title">{name}</h2>

@@ -8,7 +8,7 @@ function PopupWithForm(props) {
                 <button onClick={props.onClose} type="button" className="popup__close-button">
                     <img src={addButton} alt="закрыть" className="popup__close-button-img" />
                 </button>
-                <h3 className={props.name === 'add' || props.name === 'profile' ? 'add-popup__title' : 'approve-popup__title'}>{props.title}</h3>
+                <h3 className='popup__title'>{props.title}</h3>
                 {props.children}
                 <button type="submit" className="popup__save-button">{props.buttonText}</button>
             </form>
