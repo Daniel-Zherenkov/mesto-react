@@ -44,13 +44,13 @@ export class Api {
         }).then(res => this._getResponseData(res))
     }
 
-    changeProfile({ profileName, profileAbout }) {
+    changeProfile({ name, about }) {
         return fetch(this._url + '/users/me', {
             method: 'PATCH',
             headers: this._token,
             body: JSON.stringify({
-                name: profileName,
-                about: profileAbout
+                name,
+                about
             })
         }).then(res => this._getResponseData(res))
     }
@@ -65,13 +65,13 @@ export class Api {
         }).then(res => this._getResponseData(res))
     }
 
-    addCard({placeName, link}) {
+    addCard({name, link}) {
         return fetch(this._url + '/cards', {
             method: 'POST',
             headers: this._token,
             body: JSON.stringify({
-                name: placeName,
-                link: link
+                name,
+                link
             })
         }).then(res => this._getResponseData(res))
     }
@@ -95,6 +95,22 @@ export class Api {
             method: 'DELETE',
             headers: this._token
         }).then(res => this._getResponseData(res))
+    }
+
+    changeLikeCardStatus(id_card, isLiked) {
+        if (isLiked) {
+            
+            return fetch(`${this._url}/cards/likes/${id_card}`, {
+                method: "PUT",
+                headers: this._token,
+            }).then(res => this._getResponseData(res));
+        } else {
+            
+            return fetch(`${this._url}/cards/likes/${id_card}`, {
+                method: "DELETE",
+                headers: this._token,
+            }).then(res => this._getResponseData(res));
+        }
     }
 
 
