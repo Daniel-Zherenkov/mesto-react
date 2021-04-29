@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import editButton from '../images/editButton.svg'
 import addButton from '../images/addButton.svg'
 import Card from "./Card";
-import { CurrentUserContext } from "../context/CurrentUserContext";
-import { CardsContext } from "../context/CardsContext";
+import { CurrentUserContext } from "../contexts/CurrentUserContext";
+import { CardsContext } from "../contexts/CardsContext";
 
 
 function Main(props) {
