@@ -40,7 +40,7 @@ function AddPlacePopup({ onClose, isOpen, onAddPlace }) {
         >
             <input required
                 minLength="2"
-                maxLength="30"
+                maxLength="31"
                 name="placeName"
                 placeholder="Название"
                 type="text"
