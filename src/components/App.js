@@ -43,7 +43,7 @@ function App() {
 
     function handleCardClick(card) {
         setSelectedCard(card);
-        console.log(card)
+        // console.log(card)
     }
     
     
